@@ -1,0 +1,53 @@
+.ball
+{
+  background-color:white;
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  animation-iteration-count: infinite;
+}
+.ball1
+{
+  margin-top:5%;
+  margin-left: 50%;
+  animation-name:blink1;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+}
+.ball2
+{
+  margin-top:25%;
+  margin-left:25%;
+  animation-name:blink2;
+  animation-duration:1s;
+  animation-iteration-count:infinte;
+}
+@keyframes blink1
+{
+  50%
+  {
+    transform:scale(0.5);
+    opacity:0.5;
+    background-color:black;
+  }
+}
+@keyframes blink2
+{
+  20%
+  {
+    transform:scale(0.5);
+    opacity:0.5;
+    background-color:#0033ff;
+  }
+}
+#back
+{
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(black,#009999,#00ff66,#33cc33,#3399cc,#33cc99,#6699ff,#cc33ff,#cc6666,#ff3366,#ff6633,#ffff66);
+}
